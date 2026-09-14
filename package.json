@@ -1,0 +1,45 @@
+{
+  "name": "stockportfolio-mcp",
+  "version": "0.3.1",
+  "description": "MCP server for filing-grounded US stock data — financials, SEC filing timelines, comparisons and fund profiles, every value with the URL of the filing it came from.",
+  "mcpName": "io.github.avisre/stockportfolio-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avisre/stockportfolio-mcp.git"
+  },
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "stockportfolio-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build-dist.js",
+    "prepack": "npm run build && node scripts/no-leak-check.js",
+    "test": "node --test test/*.test.js",
+    "local": "node src/server.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "sec",
+    "edgar",
+    "filings",
+    "financial-data",
+    "financial-statements"
+  ],
+  "homepage": "https://stockportfolio.pro/api?utm_source=npm&utm_medium=integration&utm_campaign=stockportfolio-mcp",
+  "license": "MIT",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "esbuild": "^0.28.2"
+  }
+}
