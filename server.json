@@ -17,7 +17,7 @@
       },
       "environmentVariables": [
         {
-          "description": "API key from stockportfolio.pro. Optional: without one the server uses the keyless tier (2 free questions and 50 data lookups per 30 days).",
+          "description": "API key from stockportfolio.pro. Optional: without one the server uses the keyless tier (3 free questions and 25 data lookups per 30 days).",
           "isRequired": false,
           "format": "string",
           "isSecret": true,
